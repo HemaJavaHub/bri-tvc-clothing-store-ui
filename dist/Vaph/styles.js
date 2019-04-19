@@ -557,7 +557,7 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/training/Downloads/FrontEnd-master/src/styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! /Users/training/Desktop/Ecommerce UI - VAPH/bri-tvc-clothing-store-ui/src/styles.css */"./src/styles.css");
 
 
 /***/ })

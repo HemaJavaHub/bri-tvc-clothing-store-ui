@@ -41,7 +41,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <app-ecommerce></app-ecommerce>\n</div>\n"
+module.exports = "<div>\n  <app-ecommerce></app-ecommerce>\n</div>\n"
 
 /***/ }),
 
@@ -156,7 +156,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark fixed-top\">\n  <div class=\"container\">\n      <a class=\"navbar-brand\" href=\"#\">Baeldung Ecommerce</a>\n      <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\"\n              data-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\"\n              aria-expanded=\"false\" aria-label=\"Toggle navigation\" (click)=\"toggleCollapsed()\">\n          <span class=\"navbar-toggler-icon\"></span>\n      </button>\n      <div id=\"navbarResponsive\" [ngClass]=\"{'collapse': collapsed, 'navbar-collapse': true}\">\n          <ul class=\"navbar-nav ml-auto\">\n              <li class=\"nav-item active\">\n                  <a class=\"nav-link\" href=\"#\" (click)=\"reset()\">Home\n                      <span class=\"sr-only\">(current)</span>\n                  </a>\n              </li>\n          </ul>\n      </div>\n  </div>\n</nav>\n<div class=\"row\">\n  <div class=\"col-md-9\">\n      <app-products #productsC [hidden]=\"orderFinished\"></app-products>\n  </div>\n  <div class=\"col-md-3\">\n      <app-shopping-cart (onOrderFinished)=finishOrder($event) #shoppingCartC\n                         [hidden]=\"orderFinished\"></app-shopping-cart>\n  </div>\n  <div class=\"col-md-6 offset-3\">\n      <app-orders #ordersC [hidden]=\"!orderFinished\"></app-orders>\n  </div>\n</div>\n"
+module.exports = "<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark fixed-top\">\n  <div class=\"container\">\n      <a class=\"navbar-brand\" href=\"#\">VAPH Ecommerce</a>\n      <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\"\n              data-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\"\n              aria-expanded=\"false\" aria-label=\"Toggle navigation\" (click)=\"toggleCollapsed()\">\n          <span class=\"navbar-toggler-icon\"></span>\n      </button>\n      <div id=\"navbarResponsive\" [ngClass]=\"{'collapse': collapsed, 'navbar-collapse': true}\">\n          <ul class=\"navbar-nav ml-auto\">\n              <li class=\"nav-item active\">\n                  <a class=\"nav-link\" href=\"#\" (click)=\"reset()\">Home\n                      <span class=\"sr-only\">(current)</span>\n                  </a>\n              </li>\n          </ul>\n      </div>\n  </div>\n</nav>\n<div class=\"row\">\n  <div class=\"col-md-9\">\n      <app-products #productsC [hidden]=\"orderFinished\"></app-products>\n  </div>\n  <div class=\"col-md-3\">\n      <app-shopping-cart (onOrderFinished)=finishOrder($event) #shoppingCartC\n                         [hidden]=\"orderFinished\"></app-shopping-cart>\n  </div>\n  <div class=\"col-md-6 offset-3\">\n      <app-orders #ordersC [hidden]=\"!orderFinished\"></app-orders>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -479,8 +479,8 @@ __webpack_require__.r(__webpack_exports__);
 var EcommerceService = /** @class */ (function () {
     function EcommerceService(http) {
         this.http = http;
-        this.productsUrl = "/api/products";
-        this.ordersUrl = "/api/orders";
+        this.productsUrl = "http://localhost:9090/api/products";
+        this.ordersUrl = "http://localhost:9090/api/orders";
         this.orders = new _models_product_orders_model__WEBPACK_IMPORTED_MODULE_2__["ProductOrders"]();
         this.productOrderSubject = new rxjs_internal_Subject__WEBPACK_IMPORTED_MODULE_1__["Subject"]();
         this.ordersSubject = new rxjs_internal_Subject__WEBPACK_IMPORTED_MODULE_1__["Subject"]();
@@ -713,7 +713,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/training/Downloads/FrontEnd-master/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /Users/training/Desktop/Ecommerce UI - VAPH/bri-tvc-clothing-store-ui/src/main.ts */"./src/main.ts");
 
 
 /***/ })
