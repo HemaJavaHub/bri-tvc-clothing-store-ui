@@ -1,0 +1,7 @@
+---
+applications:
+  - name: rest-service
+    memory: 1024M
+    instances: 1
+    random-route: true
+    path: build/libs/<your-jar-name-here>
