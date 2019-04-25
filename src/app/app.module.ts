@@ -9,6 +9,12 @@ import {ProductsComponent} from './ecommerce/products/products.component';
 import {ShoppingCartComponent} from './ecommerce/shopping-cart/shopping-cart.component';
 import {OrdersComponent} from './ecommerce/orders/orders.component';
 import {EcommerceService} from './ecommerce/services/EcommerceService';
+import { HomeComponent } from './ecommerce/home/home.component';
+import { LoginComponent } from './ecommerce/login/login.component';
+import { RegisterComponent } from './ecommerce/register/register.component';
+import { HomeComponentComponent } from './home-component/home-component.component';
+import { HeaderComponentComponent } from './header-component/header-component.component';
+import { FooterComponentComponent } from './footer-component/footer-component.component';
 
 
 @NgModule({
@@ -17,7 +23,14 @@ import {EcommerceService} from './ecommerce/services/EcommerceService';
         EcommerceComponent,
         ProductsComponent,
         ShoppingCartComponent,
-        OrdersComponent
+        OrdersComponent,
+        HomeComponent,
+        LoginComponent,
+        RegisterComponent,
+        HomeComponentComponent,
+        HeaderComponentComponent,
+        FooterComponentComponent
+        
     ],
     imports: [
         BrowserModule,

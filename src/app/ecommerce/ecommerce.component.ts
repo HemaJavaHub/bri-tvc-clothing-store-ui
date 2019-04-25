@@ -41,4 +41,8 @@ export class EcommerceComponent implements OnInit {
         this.shoppingCartC.reset();
         this.ordersC.paid = false;
     }
+
+    login() {
+
+    }
 }
