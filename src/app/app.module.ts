@@ -15,6 +15,10 @@ import { RegisterComponent } from './ecommerce/register/register.component';
 import { HomeComponentComponent } from './home-component/home-component.component';
 import { HeaderComponentComponent } from './header-component/header-component.component';
 import { FooterComponentComponent } from './footer-component/footer-component.component';
+import { ProductDisplayComponentComponent } from './product-display-component/product-display-component.component';
+import { ProductService } from './product-display-component/productService';
+import { RouterOutlet } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
 
 
 @NgModule({
@@ -29,16 +33,18 @@ import { FooterComponentComponent } from './footer-component/footer-component.co
         RegisterComponent,
         HomeComponentComponent,
         HeaderComponentComponent,
-        FooterComponentComponent
+        FooterComponentComponent,
+        ProductDisplayComponentComponent
         
     ],
     imports: [
         BrowserModule,
         HttpClientModule,
         FormsModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        AppRoutingModule
     ],
-    providers: [EcommerceService],
+    providers: [EcommerceService,ProductService],
     bootstrap: [AppComponent]
 })
 export class AppModule {
