@@ -1,4 +1,45 @@
-<div class="row card-deck">
+<!-- 
+<div class="container" >
+    <div class="row">
+      
+<div class="card  " style="width: 10rem;">
+    <img class="card-img-top" style= "height:100%;" src="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/4ZrVLdVKeijzurndz/sale-shopping-fashion-style-and-people-concept-elegant-young-man-in-suit-choosing-clothes-in-mall-or-clothing-store-or-mall_byt67i5__F0000.png">
+    <div class="card-body ">
+      <h5 class="card-title">Men</h5>
+      <p class="card-text">Men's fashion</p>
+      <a href="#" class="btn btn-primary">Shop Men</a>
+    </div>
+  </div> -->
+
+  <div class="row card-deck">
+      <div class="col-lg-4 col-md-6 mb-4" *ngFor="let products of products">
+          <div class="card text-center">
+              <div class="card-header">
+             
+              </div>
+          
+              <div class="card-body" >
+                  <a [routerLink] = "['/productDescription/',products.id,products.name,products.price,products.size]"><img class="card-img-top"  style= "width: 10rem; height:20%;"  src="https://d2ul0w83gls0j4.cloudfront.net/taxonomy/300/0102/20171024151632.jpg" alt=""></a>
+                
+                  <h5 class="card-title">{{products.name}}</h5>
+          
+                      
+                 
+                  </div>
+                  <div class="card-body">
+                      <div class="row">
+          
+            <div class="col-4 padding-0" >
+                          <button class="btn btn-primary" 
+                                  [disabled]="">Add To Cart
+                          </button>
+                      </div>
+                      </div>
+                      </div>
+                   
+    </div>
+
+<!-- <div class="row card-deck">
    
         <div class="card text-center">
 
@@ -8,5 +49,5 @@
 
             </div>
        
-    </div>
+    </div> -->
 

@@ -9,6 +9,9 @@ import { CustomerService } from './CustomerService';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  ngOnInit(): void {
+    throw new Error("Method not implemented.");
+  }
 
   email = 'peter@klaven';
   password = 'cityslicka';
@@ -19,31 +22,32 @@ export class LoginComponent implements OnInit {
     
 
 
-  ngOnInit() {
-  }
+//   ngOnInit() {
+//   }
 
 
 
 
  
-  tryLogin() {
-    this.api.login(
-      this.email,
-      this.password
-    )
-      .subscribe(
-        r => {
-          if (r.token) {
-            this.customer.setToken(r.token);
-            this.router.navigateByUrl('/dashboard');
-          }
-        },
-        r => {
-          alert(r.error.error);
-        });
-  }
+//   tryLogin() {
+//     this.api.login(
+//       this.email,
+//       this.password
+//     )
+//       .subscribe(
+//         r => {
+//           // if (r.token) {
+//             this.customer.setToken(r.token);
+//             this.router.navigateByUrl('/dashboard');
+//           }
+//         },
+//         r => {
+//           alert(r.error.error);
+//         });
+//   }
 
 
+
+// }
 
 }
-

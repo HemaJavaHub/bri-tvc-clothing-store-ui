@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 
 import { HomeComponentComponent } from './home-component/home-component.component';
 import { LoginComponent } from './ecommerce/login/login.component';
+import { ProductDescriptionPageComponent } from './product-description-page/product-description-page.component';
 
 const routes: Routes = [
 
     {
       path :'home',
       component :HomeComponentComponent
+
     },
 
 
@@ -23,7 +25,14 @@ const routes: Routes = [
     path: 'login',
      component: LoginComponent
     
-    }
+    },
+    {
+      path: 'productDescription/:id/:name/:price/:size',
+     // path: 'productDescription',
+
+       component: ProductDescriptionPageComponent
+      
+      },
 ];
 
 @NgModule({

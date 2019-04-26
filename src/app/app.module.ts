@@ -17,8 +17,9 @@ import { HeaderComponentComponent } from './header-component/header-component.co
 import { FooterComponentComponent } from './footer-component/footer-component.component';
 import { ProductDisplayComponentComponent } from './product-display-component/product-display-component.component';
 import { ProductService } from './product-display-component/productService';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, ActivatedRouteSnapshot } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
+import { ProductDescriptionPageComponent } from './product-description-page/product-description-page.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { AppRoutingModule } from './app-routing.module';
         HomeComponentComponent,
         HeaderComponentComponent,
         FooterComponentComponent,
-        ProductDisplayComponentComponent
+        ProductDisplayComponentComponent,
+        ProductDescriptionPageComponent
         
     ],
     imports: [
