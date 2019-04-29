@@ -13,7 +13,6 @@ export class ProductDescriptionPageComponent implements OnInit {
   id: any;
  name:any;
  size:any;
- price:any;
  
   constructor(private route: ActivatedRoute) { }
   ngOnInit() {
@@ -21,8 +20,6 @@ export class ProductDescriptionPageComponent implements OnInit {
     this.id = this.route.snapshot.paramMap.get("id");
     this.name= this.route.snapshot.paramMap.get("name");
     this.size=this.route.snapshot.paramMap.get("size");
-    this.price=this.route.snapshot.paramMap.get("price");
-
 
    
     console.log( this.getProductsById(this.id));

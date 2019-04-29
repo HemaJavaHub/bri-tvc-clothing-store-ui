@@ -6,11 +6,17 @@ import { AppComponent } from './app.component';
 import { HomeComponentComponent } from './home-component/home-component.component';
 import { LoginComponent } from './ecommerce/login/login.component';
 import { ProductDescriptionPageComponent } from './product-description-page/product-description-page.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 const routes: Routes = [
 
     {
       path :'home',
+      component :HomeComponentComponent
+
+    },
+    {
+      path :'',
       component :HomeComponentComponent
 
     },
@@ -33,6 +39,13 @@ const routes: Routes = [
        component: ProductDescriptionPageComponent
       
       },
+      {
+        path: 'checkout',
+       // path: 'productDescription',
+  
+         component: CheckoutComponent
+        
+        },
 ];
 
 @NgModule({
