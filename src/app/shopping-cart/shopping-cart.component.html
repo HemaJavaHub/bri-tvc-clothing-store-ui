@@ -1,3 +1,5 @@
+<div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+    <div class="card-header text-center">
 <div class="row">
   <div class="small-12 columns">
     <h3>
@@ -11,7 +13,7 @@
   <div class="small-12 columns">
     <h5>
       Sub Total ({{itemCount}} items):
-      <span class="text--red text--bold js-cart-total">{{(cart | async).grossTotal | currency:'GBP':true}}</span>
+      <span class="text--red text--bold js-cart-total">{{(cart | async).grossTotal | currency:'$':true}}</span>
     </h5>
   </div>
 </div>
@@ -38,3 +40,7 @@
     </button>
   </div>
 </div>
+
+
+
+  

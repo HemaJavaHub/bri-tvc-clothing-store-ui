@@ -1,13 +1,13 @@
 import { async, inject, TestBed } from "@angular/core/testing";
 import { HttpModule } from "@angular/http";
-import { CartItem } from "app/models/cart-item.model";
-import { DeliveryOption } from "app/models/delivery-option.model";
-import { Product } from "app/models/product.model";
-import { ShoppingCart } from "app/models/shopping-cart.model";
-import { DeliveryOptionsDataService } from "app/services/delivery-options.service";
-import { ProductsDataService } from "app/services/products.service";
-import { ShoppingCartService } from "app/services/shopping-cart.service";
-import { LocalStorageServie, StorageService } from "app/services/storage.service";
+import { CartItem } from "../models/cart-item.model";
+import { DeliveryOption } from "../models/delivery-option.model";
+import { Product } from "../models/product.model";
+import { ShoppingCart } from "../models/shopping-cart.model";
+import { DeliveryOptionsDataService } from "../delivery-options.service";
+import { ProductsDataService } from "../products.service";
+import { ShoppingCartService } from "../shopping-cart.service";
+import { LocalStorageServie, StorageService } from "../storage.service";
 import { Observable } from "rxjs/Observable";
 import { Observer } from "rxjs/Observer";
 import * as sinon from "sinon";
@@ -17,13 +17,13 @@ const PRODUCT_1 = new Product();
 PRODUCT_1.name = "Product 1";
 PRODUCT_1.id = "1";
 PRODUCT_1.price = 1;
-PRODUCT_1.description = "desc1";
+
 
 const PRODUCT_2 = new Product();
 PRODUCT_2.name = "Product 2";
 PRODUCT_2.id = "2";
 PRODUCT_2.price = 2;
-PRODUCT_2.description = "desc2";
+
 
 const DELIVERY_OPT_1 = new DeliveryOption();
 DELIVERY_OPT_1.name = "Delivery Option 1";
@@ -43,9 +43,9 @@ class MockProductDataService extends ProductsDataService {
 
 // tslint:disable-next-line:max-classes-per-file
 class MockDeliveryOptionsDataService extends DeliveryOptionsDataService {
-  public all(): Observable<DeliveryOption[]> {
-    return Observable.from([[DELIVERY_OPT_1, DELIVERY_OPT_2]]);
-  }
+  // public all(): Observable<DeliveryOption[]> {
+  //   return Observable.from([[DELIVERY_OPT_1, DELIVERY_OPT_2]]);
+  //}
 }
 
 // tslint:disable-next-line:max-classes-per-file
@@ -123,7 +123,7 @@ describe("CheckoutComponent", () => {
 
       expect(productElements.length).toEqual(1);
       expect(productElements[0].querySelector(".js-product-name").textContent).toEqual(PRODUCT_1.name);
-      expect(productElements[0].querySelector(".js-product-desc").textContent).toContain(PRODUCT_1.description);
+    
       expect(productElements[0].querySelector(".js-product-costs").textContent)
         .toContain(`${cartItem.quantity} x £${PRODUCT_1.price}`);
       expect(productElements[0].querySelector(".js-product-total").textContent)

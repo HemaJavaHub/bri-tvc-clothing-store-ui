@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ApiService } from './ApiService';
 import { CustomerService } from './CustomerService';
+import { AuthenticationService } from './AuthenticationService';
 
 @Component({
   selector: 'app-login',
@@ -9,22 +10,26 @@ import { CustomerService } from './CustomerService';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  ngOnInit(): void {
-    throw new Error("Method not implemented.");
+  username = 'javainuse'
+  password = ''
+  invalidLogin = false
+
+  constructor(private router: Router,
+    private loginservice: AuthenticationService) { }
+
+  ngOnInit() {
   }
 
-  email = 'peter@klaven';
-  password = 'cityslicka';
- 
-  constructor(private api: ApiService, private customer: CustomerService, private router: Router) {
+  checkLogin() {
+    if (this.loginservice.authenticate(this.username, this.password)
+    ) {
+      this.router.navigate([''])
+      this.invalidLogin = false
+    } else
+      this.invalidLogin = true
   }
 
-    
-
-
-//   ngOnInit() {
-//   }
-
+}
 
 
 
@@ -50,4 +55,3 @@ export class LoginComponent implements OnInit {
 
 // }
 
-}

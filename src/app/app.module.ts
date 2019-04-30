@@ -10,14 +10,14 @@ import {ProductsComponent} from './ecommerce/products/products.component';
 import {OrdersComponent} from './ecommerce/orders/orders.component';
 import {EcommerceService} from './ecommerce/services/EcommerceService';
 import { HomeComponent } from './ecommerce/home/home.component';
-import { LoginComponent } from './ecommerce/login/login.component';
-import { RegisterComponent } from './ecommerce/register/register.component';
+
+import { RegisterComponent } from './register/register.component';
 import { HomeComponentComponent } from './home-component/home-component.component';
 import { HeaderComponentComponent } from './header-component/header-component.component';
 import { FooterComponentComponent } from './footer-component/footer-component.component';
 import { ProductDisplayComponentComponent } from './product-display-component/product-display-component.component';
 import { ProductService } from './product-display-component/productService';
-import { RouterOutlet, ActivatedRouteSnapshot } from '@angular/router';
+import { RouterOutlet, ActivatedRoute} from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 
 
@@ -34,6 +34,7 @@ import { LocalStorageServie, StorageService } from "./storage.service";
 import { ProductDescriptionPageComponent } from './product-description-page/product-description-page.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { PopulatedCartRouteGuard } from "./route-gaurds/populated-cart.route-gaurd";
+import { LoginComponent } from './login/login.component';
 
 
 
@@ -64,7 +65,8 @@ import { PopulatedCartRouteGuard } from "./route-gaurds/populated-cart.route-gau
         HttpModule,
         FormsModule,
         ReactiveFormsModule,
-        AppRoutingModule
+        AppRoutingModule,
+        
     ],
     providers: [EcommerceService,ProductService,ProductsDataService,
         DeliveryOptionsDataService,

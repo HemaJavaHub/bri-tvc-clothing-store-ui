@@ -1,22 +1,21 @@
+<div class="container">
+       
+<div class="row card-deck">
 
-<div class="container" >
-  <app-shopping-cart></app-shopping-cart>
-  </div> 
 
-  <div class="row card-deck">
-      <div class="col-lg-4 col-md-6 mb-4" *ngFor="let product of products | async">
+      <div class="col-lg-4 " *ngFor="let product of filterproducts">
           <div class="card text-center">
               <div class="card-header">
              
               </div>
           
-              <div class="card-body" >
+              <div class="card-body mx-auto">
                  
-                
+                   
                   <h5 class="card-title">{{product.name}}</h5>
                   <h5 class="card-title">{{product.price}}</h5>
-          
-                      
+                    
+         
                  
                   </div>
                   <div class="card-body">
@@ -33,10 +32,16 @@
                       </div>
                       </div>
                       </div>
+                    
                    
     </div>
-
-    
+ 
+    </div>
+</div>
+</div>
+<div class="col-md-3 ml-auto">
+        <app-shopping-cart></app-shopping-cart>
+</div> 
 
 <!-- <div class="row card-deck">
    

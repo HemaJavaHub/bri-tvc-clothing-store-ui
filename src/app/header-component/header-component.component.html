@@ -19,14 +19,14 @@
           </ul>
           <ul class="navbar-nav ml-auto">
               <li class="nav-item dropdown active">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Men
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Shirts</a>
-                    <a class="dropdown-item" href="#">Pants</a>
+                    <a class="dropdown-item" (click)="getMensShirts()">Shirts</a>
+                    <a class="dropdown-item" (click)="getMensPants()">Pants</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" [routerLink]="'/productdisplay'">View All</a>
+                    <a class="dropdown-item" [routerLink]="'/productdisplay/Men'">View All</a>
                   </div>
                 </li>
                 <li class="nav-item dropdown active">
@@ -34,24 +34,36 @@
                       Women
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">Dress</a>
-                      <a class="dropdown-item" href="#">Tops</a>
+                      <a class="dropdown-item" (click)="getWomensDress()">Dress</a>
+                      <a class="dropdown-item" (click)="getWomensTops()">Tops</a>
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">View All</a>
+                      <a class="dropdown-item" [routerLink]="'/productdisplay/Women'">View All</a>
                     </div>
                   </li>
                   <li class="nav-item dropdown active">
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Kids
+                       Boys
                     
                       </a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Girls</a>
-                        <a class="dropdown-item" href="#">Boys</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">View All</a>
-                      </div>
+                          <a class="dropdown-item" (click)="getBoysShirt()">Shirts</a>
+                          <a class="dropdown-item" (click)="getBoysPants()">Pants</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" [routerLink]="'/productdisplay/Boys'">View All</a>
+                        </div>
                     </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         Girls
+                      
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" (click)="getGirlsDress()">Dress</a>
+                            <a class="dropdown-item"(click)="getGirlsTops()">Tops</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" [routerLink]="'/productdisplay/Girls'">View All</a>
+                          </div>
+                      </li>
           
           
         
@@ -61,14 +73,9 @@
 
         <ul class="navbar-nav ml-auto">
               
-            <li class="nav-item active">
-              <a class="nav-link" href="#" (click)="reset()">Cart
-                  <span class="sr-only">(current)</span>
-              </a>
-          </li>
-          
+        
           <li class="nav-item active">
-            <a class="nav-link" [routerLink]="'/login'">Login
+            <a [routerLink]="'/login'">Login
                 <span class="sr-only">(current)</span>
             </a>
         </li>

@@ -4,15 +4,19 @@ import { Product } from "./models/product.model";
 import "rxjs/add/operator/map";
 import { Observable } from "rxjs/Observable";
 import { CachcingServiceBase } from "./caching.service";
+import { ActivatedRoute } from '@angular/router';
 
 let count = 0;
 
 @Injectable()
 export class ProductsDataService extends CachcingServiceBase {
   private products: Observable<Product[]>;
-
-  public constructor(private http: Http) {
+  public productst: Product[];
+  public category: String;
+  public subcategory: String;
+  public constructor(private http: Http,private route: ActivatedRoute) {
     super();
+    
   }
 
   public all(): Observable<Product[]> {
@@ -28,4 +32,7 @@ export class ProductsDataService extends CachcingServiceBase {
                                                                       })));
 
   }
+
+
+
 }

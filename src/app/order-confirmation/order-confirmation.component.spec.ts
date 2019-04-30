@@ -1,11 +1,11 @@
 import { async, inject, TestBed } from "@angular/core/testing";
-import { CartItem } from "app/models/cart-item.model";
-import { Product } from "app/models/product.model";
-import { ShoppingCart } from "app/models/shopping-cart.model";
-import { DeliveryOptionsDataService } from "app/services/delivery-options.service";
-import { ProductsDataService } from "app/services/products.service";
-import { ShoppingCartService } from "app/services/shopping-cart.service";
-import { LocalStorageServie, StorageService } from "app/services/storage.service";
+import { CartItem } from "../models/cart-item.model";
+import { Product } from "../models/product.model";
+import { ShoppingCart } from "../models/shopping-cart.model";
+import { DeliveryOptionsDataService } from "../delivery-options.service";
+import { ProductsDataService } from "../products.service";
+import { ShoppingCartService } from "../shopping-cart.service";
+import { LocalStorageServie, StorageService } from "../storage.service";
 import { Observable } from "rxjs/Observable";
 import { Observer } from "rxjs/Observer";
 import * as sinon from "sinon";
