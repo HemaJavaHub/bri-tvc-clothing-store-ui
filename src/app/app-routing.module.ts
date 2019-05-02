@@ -1,12 +1,12 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { ProductDisplayComponentComponent } from './product-display-component/product-display-component.component';
-import { AppComponent } from './app.component';
 import { HomeComponentComponent } from './home-component/home-component.component';
-import { LoginComponent } from './login/login.component';
+import { ProductDisplayComponentComponent } from './product-display-component/product-display-component.component';
 import { ProductDescriptionPageComponent } from './product-description-page/product-description-page.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+
 
 const routes: Routes = [
 
@@ -30,27 +30,34 @@ const routes: Routes = [
     path: 'productdisplay/:category',
     component: ProductDisplayComponentComponent
   },
-  {
-    path: 'login',
-    component: LoginComponent
-  },
-  {
-    path: 'register',
-    component: RegisterComponent
-  },
+  
   {
     path: 'productDescription/:id/:name/:price/:size',
     // path: 'productDescription',
       component: ProductDescriptionPageComponent
     
     },
-      {
-        path: 'checkout',
+  {
+    path: 'checkout',
        // path: 'productDescription',
   
-         component: CheckoutComponent
+      component: CheckoutComponent
         
-        },
+    },
+
+  {  
+    path: 'login',
+      
+    component: LoginComponent
+    },
+
+  { 
+    path: 'register',
+
+    component: RegisterComponent
+  
+
+  }
 ];
 
 @NgModule({
