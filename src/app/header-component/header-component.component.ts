@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Product } from "../models/product.model";
 import { ProductsDataService } from "../products.service";
 import { Router } from '@angular/router';
+import { AuthenticationService } from '../services/authentication.service';
+import { User } from '../models';
 @Component({
   selector: 'app-header-component',
   templateUrl: './header-component.component.html',
@@ -9,7 +11,11 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponentComponent implements OnInit {
   public products: Product[];
-  constructor(private productdataService:ProductsDataService , private router:Router) { }
+  currentUser:User;
+  username:string;
+  constructor(private productdataService:ProductsDataService , private router:Router, private authenticationService:AuthenticationService) { 
+    this.authenticationService.currentUser.subscribe(x => this.currentUser = x);
+  }
 
   getMensPants(){
     this.router.navigateByUrl('/productdisplay', {skipLocationChange: true})
@@ -52,7 +58,11 @@ export class HeaderComponentComponent implements OnInit {
                .then(()=>this.router.navigate(["/productdisplay/Girls/Tops"]));
   }
 
+  logout() {
+    this.authenticationService.logout();
+    this.router.navigate(['/login']);
 
+}
 
   ngOnInit() {
    
