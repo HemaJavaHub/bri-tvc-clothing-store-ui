@@ -9,6 +9,7 @@ public price: number;
 public category: string;
 public sub_category: string;
 public size : string;
+public image:string;
 
 
 public updateFrom(src: Product): void {
@@ -18,6 +19,7 @@ public updateFrom(src: Product): void {
     this.category = src.category;
     this.sub_category = src.sub_category;
     this.size = src.size;
+    this.image=src.image;
 
 }
 }

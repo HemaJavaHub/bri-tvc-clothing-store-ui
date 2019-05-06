@@ -1,42 +1,43 @@
 <div class="container">
        
-<div class="row card-deck">
+  <div class="card-deck">
 
-
-      <div class="col-lg-4 " *ngFor="let product of filterproducts">
+    <!-- class="col-lg-4 " -->
+      <div *ngFor="let product of filterproducts" id=card>
           <div class="card text-center">
               <div class="card-header">
-             
-              </div>
-          
-              <div class="card-body mx-auto">  
-                  <h5 class="card-title">{{product.name}}</h5>
-                  <h5 class="card-title">{{product.price}}</h5>
-                  </div>
-                  <div class="card-body">
-                      <div class="row">
-          
-            <div class="col-4 padding-0" >
-                          <button class="btn btn-primary" (click)="addProductToCart(product, 1)"
-                                  >Add To Cart
-                          </button>
-                          <button type="button"
-                        class="button small js-btn-remove"
-                        *ngIf="productInCart(product) | async"
-                        (click)="removeProductFromCart(product, 1)">Remove item from cart</button>
-                      </div>
-                      </div>
-                      </div>
-                    
+                <div class="card-body mx-auto">  
+                    <h5 class="card-title">{{product.name}}</h5>
+                    <img class="card-img-top" src={{product.image}} alt="">
+                    <h5 class="card-title">{{product.price}}</h5>
                    
-    </div>
- 
-    </div>
+                </div>
+                  <div class="card-body">
+                    <div class="row">
+            
+              <div class="buttonspacing" >
+                          <div>
+                            <button class="btn btn-primary" (click)="addProductToCart(product, 1)"
+                                    >Add To Cart
+                            </button>
+                          </div>
+                          <div>
+                            <button type="button"
+                          class="button small js-btn-remove"
+                          *ngIf="productInCart(product) | async"
+                          (click)="removeProductFromCart(product, 1)">Remove item from cart</button>
+                          </div>
+              </div>
+                    </div>
+                  </div> 
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="col-md-3 ml-auto">
+          <app-shopping-cart></app-shopping-cart>
+  </div> 
 </div>
-</div>
-<div class="col-md-3 ml-auto">
-        <app-shopping-cart></app-shopping-cart>
-</div> 
 
 <!-- <div class="row card-deck">
    

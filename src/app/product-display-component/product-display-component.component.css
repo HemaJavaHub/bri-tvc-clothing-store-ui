@@ -1,6 +1,17 @@
 .container{
     display:flex;
 }
-.item{
+/* .item{
     order:1;
+} */
+
+.buttonspacing
+{
+    display:flex;
+    flex-direction:column;
+
 }
+
+#card{
+    padding: 20px;
+} 

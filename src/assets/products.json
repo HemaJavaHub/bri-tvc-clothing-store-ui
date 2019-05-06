@@ -6,7 +6,8 @@
     "sub_category": "Tops",
     "price": 15.99,
     "size": "S",
-    "count": 6
+    "count": 6, 
+    "image": "https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/4ZrVLdVKeijzurndz/sale-shopping-fashion-style-and-people-concept-elegant-young-man-in-suit-choosing-clothes-in-mall-or-clothing-store-or-mall_byt67i5__F0000.png"
     },
     
     {
@@ -16,7 +17,8 @@
     "sub_category": "Shirts",
     "price": 10,
     "size": "L",
-    "count": 10
+    "count": 10,
+    "image": "https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/4ZrVLdVKeijzurndz/sale-shopping-fashion-style-and-people-concept-elegant-young-man-in-suit-choosing-clothes-in-mall-or-clothing-store-or-mall_byt67i5__F0000.png"
     },
     {
     "id": 2,
@@ -25,7 +27,8 @@
     "sub_category": "Shirts",
     "price": 10,
     "size": "M",
-    "count": 10
+    "count": 10, 
+    "image": "https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/4ZrVLdVKeijzurndz/sale-shopping-fashion-style-and-people-concept-elegant-young-man-in-suit-choosing-clothes-in-mall-or-clothing-store-or-mall_byt67i5__F0000.png"
     },
     {
     "id": 3,
@@ -34,7 +37,8 @@
     "sub_category": "Pants",
     "price": 11,
     "size": "L",
-    "count": 15
+    "count": 15, 
+    "image": "https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/4ZrVLdVKeijzurndz/sale-shopping-fashion-style-and-people-concept-elegant-young-man-in-suit-choosing-clothes-in-mall-or-clothing-store-or-mall_byt67i5__F0000.png"
     },
     {
     "id": 4,
@@ -43,6 +47,7 @@
     "sub_category": "Shirts",
     "price": 10,
     "size": "S",
-    "count": 17
+    "count": 17, 
+    "image": "https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/4ZrVLdVKeijzurndz/sale-shopping-fashion-style-and-people-concept-elegant-young-man-in-suit-choosing-clothes-in-mall-or-clothing-store-or-mall_byt67i5__F0000.png"
     }
 ] 
