@@ -6,6 +6,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { ShippingBillingComponent } from './shipping-billing/shipping-billing.component';
+import { PaypalComponent } from './paypal/paypal.component';
 
 
 const routes: Routes = [
@@ -55,6 +57,20 @@ const routes: Routes = [
     path: 'register',
 
     component: RegisterComponent
+  
+
+  },
+  { 
+    path: 'shippingbilling',
+
+    component: ShippingBillingComponent
+  
+
+  },
+  { 
+    path: 'paypal',
+
+    component: PaypalComponent
   
 
   }

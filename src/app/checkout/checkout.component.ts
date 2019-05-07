@@ -10,27 +10,29 @@ import { Observable } from "rxjs/Observable";
 import { Subscription } from "rxjs/Subscription";
 
 interface ICartItemWithProduct extends CartItem {
-  product: Product;
-  totalCost: number;
+product: Product;
+totalCost: number;
 }
 
 @Component({
-  selector: "app-checkout",
-  styleUrls: ["./checkout.component.scss"],
-  templateUrl: "./checkout.component.html"
+selector: "app-checkout",
+styleUrls: ["./checkout.component.scss"],
+templateUrl: "./checkout.component.html"
 })
 export class CheckoutComponent implements OnInit, OnDestroy {
   public deliveryOptions: Observable<DeliveryOption[]>;
   public cart: Observable<ShoppingCart>;
   public cartItems: ICartItemWithProduct[];
   public itemCount: number;
+  public date:Date;
 
   private products: Product[];
   private cartSubscription: Subscription;
+  private orderNumber:string;
+  private email:string;
 
   public constructor(private productsService: ProductsDataService,
-                     private deliveryOptionService: DeliveryOptionsDataService,
-                     private shoppingCartService: ShoppingCartService) {
+    private deliveryOptionService: DeliveryOptionsDataService,private shoppingCartService: ShoppingCartService) {
   }
 
   public emptyCart(): void {
@@ -47,22 +49,23 @@ export class CheckoutComponent implements OnInit, OnDestroy {
     this.cartSubscription = this.cart.subscribe((cart) => {
       this.itemCount = cart.items.map((x) => x.quantity).reduce((p, n) => p + n, 0);
       this.productsService.all().subscribe((products) => {
-        this.products = products;
-        this.cartItems = cart.items
-                           .map((item) => {
-                              const product = this.products.find((p) => p.id === item.productId);
-                              return {
-                                ...item,
-                                product,
-                                totalCost: product.price * item.quantity };
-                           });
+      this.products = products;
+      this.cartItems = cart.items.map((item) => {
+        const product = this.products.find((p) => p.id === item.productId);
+        return {
+        ...item,
+        product,
+        totalCost: product.price * item.quantity };
+        });
       });
-    });
-  }
+  });
+  this.orderNumber=localStorage.getItem("orderNumber")
+  this.email=localStorage.getItem("email")
+}
 
   public ngOnDestroy(): void {
     if (this.cartSubscription) {
       this.cartSubscription.unsubscribe();
     }
   }
-}
+} 
