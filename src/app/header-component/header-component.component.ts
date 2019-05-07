@@ -39,9 +39,9 @@ export class HeaderComponentComponent implements OnInit {
 
 
 
-  getBoysShirt(){
+  getBoysShirts(){
     this.router.navigateByUrl('/productdisplay', {skipLocationChange: true})
-               .then(()=>this.router.navigate(["/productdisplay/Boys/Shirt"]));
+               .then(()=>this.router.navigate(["/productdisplay/Boys/Shirts"]));
   }
   getBoysPants(){
     this.router.navigateByUrl('/productdisplay', {skipLocationChange: true})
