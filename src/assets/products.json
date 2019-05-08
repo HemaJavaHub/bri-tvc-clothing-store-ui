@@ -1,125 +1,316 @@
-[
-    {
-    "id": 5,
-    "name": "Red women chiffon top",
-    "category": "Women",
-    "sub_category": "Tops",
-    "price": 15.99,
-    "size": "S",
-    "count": 6, 
-    "image": "https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/4ZrVLdVKeijzurndz/sale-shopping-fashion-style-and-people-concept-elegant-young-man-in-suit-choosing-clothes-in-mall-or-clothing-store-or-mall_byt67i5__F0000.png"
-    },
-
-    {
-    "id": 6,
-    "name": "Red women chiffon Dress",
-    "category": "Women",
-    "sub_category": "Dress",
-    "price": 15.99,
-    "size": "S",
-    "count": 6, 
-    "image": "https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/4ZrVLdVKeijzurndz/sale-shopping-fashion-style-and-people-concept-elegant-young-man-in-suit-choosing-clothes-in-mall-or-clothing-store-or-mall_byt67i5__F0000.png"
-    },
-    
+[   
     {
     "id": 1,
-    "name": "blue men cotton shirt",
-    "category": "Men",
-    "sub_category": "Shirts",
-    "price": 10,
-    "size": "L",
-    "count": 10,
-    "image": "https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/4ZrVLdVKeijzurndz/sale-shopping-fashion-style-and-people-concept-elegant-young-man-in-suit-choosing-clothes-in-mall-or-clothing-store-or-mall_byt67i5__F0000.png"
-    },
+    "name": "Sleeveless pokka-dotted top",
+    "category": "Women",
+    "sub_category": "Tops",
+    "price": 25.99,
+    "size": "S",
+    "count": 10, 
+    "image": "/assets/image/Women/TOPS/1.png"
+    }, 
+
     {
     "id": 2,
-    "name": "blue men cotton shirt",
-    "category": "Men",
-    "sub_category": "Shirts",
-    "price": 10,
+    "name": "Red Top",
+    "category": "Women",
+    "sub_category": "Tops",
+    "price": 35.99,
     "size": "M",
     "count": 10, 
-    "image": "https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/4ZrVLdVKeijzurndz/sale-shopping-fashion-style-and-people-concept-elegant-young-man-in-suit-choosing-clothes-in-mall-or-clothing-store-or-mall_byt67i5__F0000.png"
+    "image": "/assets/image/Women/TOPS/2.png"
     },
     {
     "id": 3,
-    "name": "black men jeans pant",
-    "category": "Men",
-    "sub_category": "Pants",
-    "price": 11,
+    "name": "Sleeveless Red Top",
+    "category": "Women",
+    "sub_category": "Tops",
+    "price": 19.99,
     "size": "L",
-    "count": 15, 
-    "image": "https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/4ZrVLdVKeijzurndz/sale-shopping-fashion-style-and-people-concept-elegant-young-man-in-suit-choosing-clothes-in-mall-or-clothing-store-or-mall_byt67i5__F0000.png"
-    },
+    "count": 10, 
+    "image": "/assets/image/Women/TOPS/3.png"
+    }, 
+    
     {
     "id": 4,
-    "name": "blue men cotton shirt",
-    "category": "Men",
-    "sub_category": "Shirts",
-    "price": 10,
-    "size": "S",
-    "count": 17, 
-    "image": "https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/4ZrVLdVKeijzurndz/sale-shopping-fashion-style-and-people-concept-elegant-young-man-in-suit-choosing-clothes-in-mall-or-clothing-store-or-mall_byt67i5__F0000.png"
+    "name": "Leapord Skin Top",
+    "category": "Women",
+    "sub_category": "Tops",
+    "price": 15.99,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Women/TOPS/4.png"
     },
+    {
+    "id": 5,
+    "name": "White Top",
+    "category": "Women",
+    "sub_category": "Tops",
+    "price": 17.99,
+    "size": "L",
+    "count": 10, 
+    "image": "/assets/image/Women/TOPS/5.png"
+    }, 
 
     {
-    "id": 7,
-    "name": "blue boy cotton shirts",
-    "category": "Boys",
-    "sub_category": "Shirts",
-    "price": 10,
+    "id": 6,
+    "name": "Blue Top",
+    "category": "Women",
+    "sub_category": "Tops",
+    "price": 34.99,
     "size": "S",
-    "count": 17, 
-    "image": "https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/4ZrVLdVKeijzurndz/sale-shopping-fashion-style-and-people-concept-elegant-young-man-in-suit-choosing-clothes-in-mall-or-clothing-store-or-mall_byt67i5__F0000.png"
+    "count": 10, 
+    "image": "/assets/image/Women/TOPS/6.png"
     },
     {
+    "id": 7,
+    "name": "Multi-colored Stripe Top",
+    "category": "Women",
+    "sub_category": "Tops",
+    "price": 15.99,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Women/TOPS/7.png"
+    }, 
+    
+    {
     "id": 8,
-    "name": "blue boy cotton pants",
-    "category": "Boys",
-    "sub_category": "Pants",
-    "price": 10,
+    "name": "Black and White Top",
+    "category": "Women",
+    "sub_category": "Tops",
+    "price": 15.99,
     "size": "S",
-    "count": 17, 
-    "image": "https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/4ZrVLdVKeijzurndz/sale-shopping-fashion-style-and-people-concept-elegant-young-man-in-suit-choosing-clothes-in-mall-or-clothing-store-or-mall_byt67i5__F0000.png"
+    "count": 10, 
+    "image": "/assets/image/Women/TOPS/8.png"
     },
     {
     "id": 9,
-    "name": "blue girl cotton Dress",
-    "category": "Girls",
-    "sub_category": "Dress",
-    "price": 10,
+    "name": "White Top",
+    "category": "Women",
+    "sub_category": "Tops",
+    "price": 24.99,
     "size": "S",
-    "count": 17, 
-    "image": "https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/4ZrVLdVKeijzurndz/sale-shopping-fashion-style-and-people-concept-elegant-young-man-in-suit-choosing-clothes-in-mall-or-clothing-store-or-mall_byt67i5__F0000.png"
+    "count": 10, 
+    "image": "/assets/image/Women/TOPS/9.png"
+    }, 
+    {
+    "id": 10,
+    "name": "Light Blue Top",
+    "category": "Women",
+    "sub_category": "Tops",
+    "price": 34.99,
+    "size": "S",
+    "count": 10, 
+    "image": "/assets/image/Women/TOPS/10.png"
+    }, 
+
+
+    {
+    "id": 1,
+    "name": "White Dress",
+    "category": "Women",
+    "sub_category": "Dress",
+    "price": 50.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Women/DRESS/2.png"
+    }, 
+
+    {
+    "id": 2,
+    "name": "Light Blue Dress",
+    "category": "Women",
+    "sub_category": "Dress",
+    "price": 40.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Women/DRESS/2.png"
+    },
+    {
+    "id": 3,
+    "name": "Blue Dress",
+    "category": "Women",
+    "sub_category": "Dress",
+    "price": 45.00,
+    "size": "L",
+    "count": 10, 
+    "image": "/assets/image/Women/DRESS/3.png"
+    }, 
+    
+    {
+    "id": 4,
+    "name": "Blue Striped Dress",
+    "category": "Women",
+    "sub_category": "Dress",
+    "price": 30.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Women/DRESS/4.png"
+    },
+    {
+    "id": 5,
+    "name": "Yellow Dress",
+    "category": "Women",
+    "sub_category": "Dress",
+    "price": 60.00,
+    "size": "L",
+    "count": 10, 
+    "image": "/assets/image/Women/DRESS/5.png"
+    }, 
+
+    {
+    "id": 6,
+    "name": "Black Dress",
+    "category": "Women",
+    "sub_category": "Dress",
+    "price": 70.00,
+    "size": "L",
+    "count": 10, 
+    "image": "/assets/image/Women/DRESS/6.png"
+    },
+    {
+    "id": 7,
+    "name": "White Button Dress",
+    "category": "Women",
+    "sub_category": "Dress",
+    "price": 40.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Women/DRESS/7.png"
+    }, 
+    
+    {
+    "id": 8,
+    "name": "Peach Dress",
+    "category": "Women",
+    "sub_category": "Dress",
+    "price": 55.00,
+    "size": "S",
+    "count": 10, 
+    "image": "/assets/image/Women/DRESS/8.png"
+    },
+    {
+    "id": 9,
+    "name": "Sky Blue Dress",
+    "category": "Women",
+    "sub_category": "Dress",
+    "price": 65.00,
+    "size": "S",
+    "count": 10, 
+    "image": "/assets/image/Women/DRESS/9.png"
+    }, 
+    {
+    "id": 10,
+    "name": "White Sleeved Dress",
+    "category": "Women",
+    "sub_category": "Dress",
+    "price": 35.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Women/DRESS/10.png"
+    },
+
+
+    {
+    "id": 1,
+    "name": "Teal Shirt",
+    "category": "Men",
+    "sub_category": "Shirts",
+    "price": 35.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Men/SHIRTS/1.png"
+    }, 
+    {
+    "id": 2,
+    "name": "White Shirt",
+    "category": "Men",
+    "sub_category": "Shirts",
+    "price": 35.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Men/SHIRTS/2.png"
+    },
+    {
+    "id": 3,
+    "name": "Floral Shirt",
+    "category": "Men",
+    "sub_category": "Shirts",
+    "price": 35.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Men/SHIRTS/3.png"
+    },
+    {
+    "id": 4,
+    "name": "Peach Poplin Shirt",
+    "category": "Men",
+    "sub_category": "Shirts",
+    "price": 35.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Men/SHIRTS/4.png"
+    }, 
+    {
+    "id": 5,
+    "name": "Striped Shirt",
+    "category": "Men",
+    "sub_category": "Shirts",
+    "price": 35.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Men/SHIRTS/5.png"
+    },
+    {
+    "id": 6,
+    "name": "Peach Shirt",
+    "category": "Men",
+    "sub_category": "Shirts",
+    "price": 35.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Men/SHIRTS/6.png"
+    },
+    {
+    "id": 7,
+    "name": "White Sleeved Dress",
+    "category": "Men",
+    "sub_category": "Shirts",
+    "price": 35.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Men/SHIRTS/7.png"
+    }, 
+    {
+    "id": 8,
+    "name": "White Sleeved Dress",
+    "category": "Men",
+    "sub_category": "Shirts",
+    "price": 35.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Men/SHIRTS/8.png"
+    },
+    {
+    "id": 9,
+    "name": "White Sleeved Dress",
+    "category": "Men",
+    "sub_category": "Shirts",
+    "price": 35.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Men/SHIRTS/9.png"
     },
     {
     "id": 10,
-    "name": "blue girl cotton top",
-    "category": "Girls",
-    "sub_category": "Tops",
-    "price": 10,
-    "size": "S",
-    "count": 17, 
-    "image": "https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/4ZrVLdVKeijzurndz/sale-shopping-fashion-style-and-people-concept-elegant-young-man-in-suit-choosing-clothes-in-mall-or-clothing-store-or-mall_byt67i5__F0000.png"
-    },
-    {
-    "id": 11,
-    "name": "blue boy cotton shirts",
-    "category": "Boys",
+    "name": "White Sleeved Dress",
+    "category": "Men",
     "sub_category": "Shirts",
-    "price": 10,
-    "size": "S",
-    "count": 17, 
-    "image": "https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/4ZrVLdVKeijzurndz/sale-shopping-fashion-style-and-people-concept-elegant-young-man-in-suit-choosing-clothes-in-mall-or-clothing-store-or-mall_byt67i5__F0000.png"
+    "price": 35.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Men/SHIRTS/10.png"
     },
-    {
-    "id": 12,
-    "name": "blue boy cotton shirts",
-    "category": "Boys",
-    "sub_category": "Shirts",
-    "price": 10,
-    "size": "S",
-    "count": 17, 
-    "image": "https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/4ZrVLdVKeijzurndz/sale-shopping-fashion-style-and-people-concept-elegant-young-man-in-suit-choosing-clothes-in-mall-or-clothing-store-or-mall_byt67i5__F0000.png"
-    }
-] 
+
+
+]

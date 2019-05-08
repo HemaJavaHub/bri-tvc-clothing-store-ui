@@ -1,9 +1,6 @@
 .container{
     display:flex;
 }
-/* .item{
-    order:1;
-} */
 
 .buttonspacing
 {
@@ -15,5 +12,4 @@
 #card{
     padding: 20px;
     width: 50%;
-    height: 50%;
 } 
