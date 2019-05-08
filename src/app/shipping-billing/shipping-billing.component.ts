@@ -59,6 +59,7 @@ states = ['AL','AK','AS','AZ','AR','CA','CO','CT','DE','DC','FM',
       console.log("inside onsubmit")
       this.shippingandbilling=this.shippingBillingForm.value;
       this.address=this.shippingBillingForm.value.address+' '+this.shippingBillingForm.value.city+' '+this.shippingBillingForm.value.state+' '+this.shippingBillingForm.value.zip;
+      localStorage.setItem('username',this.shippingBillingForm.value.fullName);
       localStorage.setItem('address',this.address);
       localStorage.setItem('email',this.shippingBillingForm.value.email);
       console.log(this.shippingBillingForm.value.fullName)

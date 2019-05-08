@@ -40,6 +40,7 @@ import { PaypalComponent } from './paypal/paypal.component';
 
 
 
+
 @NgModule({
     declarations: [
         AppComponent,
@@ -60,7 +61,8 @@ import { PaypalComponent } from './paypal/paypal.component';
         CheckoutComponent,
         OrderConfirmationComponent,
         ShippingBillingComponent,
-        PaypalComponent
+        PaypalComponent,
+       
        
         
     ],

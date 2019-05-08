@@ -11,7 +11,8 @@ import { Observable } from "rxjs/Observable";
 import { Subscription } from "rxjs/Subscription";
 import { routerNgProbeToken } from '@angular/router/src/router_module';
 import { Router } from '@angular/router';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { OrderItems, Orderdetails } from '../models/orderdetails';
  
 declare let paypal: any;
 interface ICartItemWithProduct extends CartItem {
@@ -37,8 +38,9 @@ export class PaypalComponent implements OnInit, AfterViewChecked {
   paypalLoad: boolean = true;
   orderNumber:any;
   address:string;
-  
+  orderItems: Array<OrderItems> = []
   finalAmount: number;
+  orderdetails:Orderdetails;
  
   paypalConfig = {
     env: 'sandbox',
@@ -59,12 +61,16 @@ export class PaypalComponent implements OnInit, AfterViewChecked {
     onAuthorize: (data, actions) => {
       return actions.payment.execute().then((payment) => {
         
-          this.orderNumber = "abc123";
-          localStorage.setItem('orderNumber',this.orderNumber);
-          let url='http://localhost:8091/users/registration';
-          this.orderNumber= this.http.post(url, this.address).subscribe((response)=>{
-          return response;
-          });
+
+          // this.orderNumber= this.http.post(url, Orderdetails,header)
+          // .map((response) => response.toString)
+          // .catch(
+          //       (error: Response) => {
+          //         return Observable.throw(error);
+          //       }
+          //      );
+              
+      
           this.router.navigate(['/checkout']);
           //Do something when payment is successful.
 
@@ -72,6 +78,7 @@ export class PaypalComponent implements OnInit, AfterViewChecked {
       })
     }
   };
+
  
   ngAfterViewChecked(): void {
     if (!this.addScript) {
@@ -117,16 +124,25 @@ export class PaypalComponent implements OnInit, AfterViewChecked {
         this.products = products;
         this.cartItems = cart.items.map((item) => {
           const product = this.products.find((p) => p.id === item.productId);
+          this.orderItems.push({name:item.name,size:item.size,qty:item.quantity,price:product.price * item.quantity})
           return {
             ...item,
             product,
-            totalCost: product.price * item.quantity };
+            totalCost: product.price * item.quantity, 
+          };  
           });
         });
     });
 
     this.cart.subscribe((shoppingCart)=>{this.finalAmount = shoppingCart.grossTotal});
     this.address=localStorage.getItem('address');
+    console.log(localStorage.getItem("username"));
+    this.orderdetails = new Orderdetails();
+        this.orderdetails.username=localStorage.getItem("username");
+        this.orderdetails.email=localStorage.getItem("email");
+        this.orderdetails.items=this.orderItems;
+        this.orderdetails.total=this.finalAmount;
+        this.orderdetails.address=localStorage.getItem("address");
 
 }
 
