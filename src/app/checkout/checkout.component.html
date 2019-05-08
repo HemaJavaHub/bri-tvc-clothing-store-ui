@@ -1,76 +1,192 @@
-<div class="row card-deck mx-auto"  >
+<div class="card mt-5" style="margin:auto;width: 600px;">
+<div class="card-body">
+<div class="row card-deck mx-auto" >
   <!-- <div class="medium-4 columns">
-    <h2>
-      <i class="material-icons">shopping_basket</i>
-      <span>Checkout</span>checkout_row 
-    </h2>
+  <h2>
+  <i class="material-icons">shopping_basket</i>
+  <span>Checkout</span>checkout_row 
+  </h2>
   </div> -->
   <!-- <div class="medium-4 columns text-right"> -->
-    <h4>
-      Order Total
-      <span class="text--red text--bold js-gross-total">{{(cart | async).grossTotal | currency:'$':true}}</span>
-    </h4>
+  
+  
+  <!-- <h4>
+  Order Total
+  <span class="text--red text--bold js-gross-total">{{(cart | async).grossTotal | currency:'$':true}}</span>
+  </h4> -->
+  
+  
+  
   <!-- </div> -->
   <!-- <div class="medium-4 columns text-right">
-    <h5 class="text--red"
-       *ngIf="(cart | async).deliveryOptionId === undefined">Please select a delivery option...</h5>
-    <a class="success button large"
-       *ngIf="(cart | async).deliveryOptionId !== undefined"
-       routerLink="/confirmed">Purchase Order</a>
+  <h5 class="text--red"
+  *ngIf="(cart | async).deliveryOptionId === undefined">Please select a delivery option...</h5>
+  <a class="success button large"
+  *ngIf="(cart | async).deliveryOptionId !== undefined"
+  routerLink="/confirmed">Purchase Order</a>
   </div> -->
-  <hr/>
-</div>
-<div class="row card-deck mx-auto"  >
+  
+  
+  <!-- <hr/>
+  </div>
+  <div class="row card-deck mx-auto" >
   <div class="medium-8 columns">
-
-    <small>Shipping</small>
-    <div class="row card-deck mx-auto"  
-        *ngFor="let item of cartItems">
-      <div class="medium-2 columns text-center">
-          <img src="./assets/{{item.product.id}}.jpg"
-                class="product_image"/>
-      </div>
-      <div class="col-md-6">
-          <span class="text--bold js-product-name">{{item.product.name}}</span>
-          <p class="js-product-desc">{{item.product.description}}</p>
-      </div>
-      <div class="col-md-6 text-right">
-          <p class="text--red js-product-costs">{{item.quantity}} x {{item.product.price | currency:'$':true}}</p>
-      </div>
-      <div class="col-md-6 text-right">
-          <p class="text--bold text--red js-product-total">{{item.totalCost | currency:'$':true}}</p>
-      </div>
-    </div>
+  
+  <small>Shipping</small>
+  <div class="row card-deck mx-auto" 
+  *ngFor="let item of cartItems">
+  <div class="medium-2 columns text-center">
+  <img src="./assets/{{item.product.id}}.jpg"
+  class="product_image"/>
   </div>
+  <div class="col-md-6">
+  <span class="text--bold js-product-name">{{item.product.name}}</span>
+  <p class="js-product-desc">{{item.product.description}}</p>
+  </div>
+  <div class="col-md-6 text-right">
+  <p class="text--red js-product-costs">{{item.quantity}} x {{item.product.price | currency:'$':true}}</p>
+  </div>
+  <div class="col-md-6 text-right">
+  <p class="text--bold text--red js-product-total">{{item.totalCost | currency:'$':true}}</p>
+  </div>
+  </div>
+  </div> --> 
+  <div>Thanks for your Order #<span>{{orderNumber}}</span> Order details has been sent to your email <span>{{email}}</span>
+  </div>
+  <!-- <table mdbTable class="grey lighten-1 black-text" borderless="true">
+  <thead >
+  <tr>
+  <th scope="col">ORDER SUMMARY </th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr mdbTableCol>
+  <th scope="row">Order#:</th>
+  <td>abc123</td>
+  </tr>
+  <tr>
+  <th scope="row">Order Date:</th>
+  <td>{{date}}</td>
+  </tr>
+  <tr>
+  <th scope="row">Order Total:</th>
+  <td>{{(cart | async).grossTotal | currency:'$':true}}</td>
+  </tr>
+  </tbody>
+  </table>
+  
+  
+  <table mdbTable borderless="true">
+  <thead class="black white-text">
+  <tr>
+  <th scope="col">Items ordered</th>
+  <th scope="col">Name</th>
+  <th scope="col">size</th>
+  <th scope="col">qty</th>
+  <th scope="col">price</th>
+  <th scope="col">total</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr mdbTableCol *ngFor="let el of cartItems">
+  <th scope="row">img</th>
+  <td>{{el.name}}</td>
+  <td>{{el.size}}</td>
+  <td>{{el.quantity}}</td>
+  <td>{{el.product.price | currency:'$':true}}</td>
+  <td>{{el.totalCost | currency:'$':true}}</td>
+  </tr>
+  </tbody>
+  </table> -->
+  
+  
+  
   <!-- <div class="medium-4 columns">
-    <h4>Delivery Options</h4>
-
-    <div class="row delivery-option"
-        *ngFor="let option of deliveryOptions | async">
-        <div class="small-1 columns">
-          <input type="radio"
-                 name="delivery_option"
-                 id="{{option.name}}"
-                 [checked]="option.id === (cart | async).deliveryOptionId"
-                 (click)="setDeliveryOption(option)">
-        </div>
-        <div class="small-9 columns">
-          <label class="text--bold js-option-name" for="{{option.name}}" (click)="setDeliveryOption(option)">{{option.name}}</label>
-        </div>
-        <div class="small-2 columns">
-          <p class="text--bold text--red js-option-price">{{option.price | currency:'$':true}}</p>
-        </div>
-        <div class="small-12 columns">
-          <p>{{option.description}}</p>
-        </div>
-    </div>
-  </div> -->
-
-
-  <div class="row">
-    <div class="small-10 columns small-centered">
-      <a class="warning button expanded"
-        routerLink="/">Continue Shopping</a>
-    </div>
+  <h4>Delivery Options</h4>
+  
+  <div class="row delivery-option"
+  *ngFor="let option of deliveryOptions | async">
+  <div class="small-1 columns">
+  <input type="radio"
+  name="delivery_option"
+  id="{{option.name}}"
+  [checked]="option.id === (cart | async).deliveryOptionId"
+  (click)="setDeliveryOption(option)">
   </div>
-</div>
+  <div class="small-9 columns">
+  <label class="text--bold js-option-name" for="{{option.name}}" (click)="setDeliveryOption(option)">{{option.name}}</label>
+  </div>
+  <div class="small-2 columns">
+  <p class="text--bold text--red js-option-price">{{option.price | currency:'$':true}}</p>
+  </div>
+  <div class="small-12 columns">
+  <p>{{option.description}}</p>
+  </div>
+  </div>
+  </div> -->
+  
+  
+  <!-- <div class="row">
+  <div class="small-10 columns small-centered">
+  <a class="warning button expanded"
+  routerLink="/">Continue Shopping</a>
+  </div>
+  </div> -->
+  </div>
+ 
+  <div class="container mb-4">
+  <div class="row">
+  <div class="col-12">
+  <div class="table-responsive">
+  <table class="table table-striped">
+  <thead>
+  <tr>
+  <th scope="col"> </th>
+  <th scope="col">Product</th>
+  <th scope="col">Size</th>
+  <th scope="col" class="text-center">Quantity</th>
+  <th scope="col" class="text-right">Price</th>
+  <th scope="col" class="text-right">Total</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let el of cartItems">
+  <td><img src="https://dummyimage.com/50x50/55595c/fff" /> </td>
+  <td>{{el.name}}</td>
+  <td>{{el.size}}</td>
+  <td class="text-center">{{el.quantity}}</td>
+  <td class="text-right">{{el.product.price | currency:'$':true}}</td>
+  <td class="text-right">{{el.totalCost | currency:'$':true}}</td>
+  </tr>
+  <!-- <tr>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>Sub-Total</td>
+  <td class="text-right">{{(cart | async).grossTotal | currency:'$':true}}</td>
+  </tr> -->
+  <!-- <tr>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>Shipping</td>
+  <td class="text-right">0.00</td>
+  </tr> -->
+  <tr>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td><strong>Total</strong></td>
+  <td class="text-right"><strong>{{(cart | async).grossTotal | currency:'$':true}}</strong></td>
+  </tr>
+  </tbody>
+  </table>
+  </div>
+  </div>
+  </div>
+  </div> 
+  </div>
+  </div>

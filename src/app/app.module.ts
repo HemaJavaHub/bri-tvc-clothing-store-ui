@@ -35,6 +35,8 @@ import { LocalStorageServie, StorageService } from "./storage.service";
 import { ProductDescriptionPageComponent } from './product-description-page/product-description-page.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { PopulatedCartRouteGuard } from "./route-gaurds/populated-cart.route-gaurd";
+import { ShippingBillingComponent } from './shipping-billing/shipping-billing.component';
+import { PaypalComponent } from './paypal/paypal.component';
 
 
 
@@ -56,7 +58,9 @@ import { PopulatedCartRouteGuard } from "./route-gaurds/populated-cart.route-gau
         ShoppingCartComponent,
       
         CheckoutComponent,
-        OrderConfirmationComponent
+        OrderConfirmationComponent,
+        ShippingBillingComponent,
+        PaypalComponent
        
         
     ],

@@ -1,0 +1,61 @@
+<div class="card mt-5" style="margin:auto;width: 600px;">
+  <div class="card-body">
+      <h5 class="card-title">Shipping and Billing </h5>
+      <form [formGroup]="shippingBillingForm" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+              <label for="fullName">Full Name</label>
+              <input type="text" formControlName="fullName" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.fullName.errors }" />
+              <div *ngIf="submitted && f.fullName.errors" class="invalid-feedback">
+                  <div *ngIf="f.fullName.errors.required">Full Name is required</div>
+              </div>
+          </div>
+          <div class="form-group">
+              <label for="email">Email</label>
+              <input type="text" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+              <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                      <div *ngIf="f.email.errors.required">Email is required</div>
+              </div>
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" formControlName="address" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.address.errors }" />
+            <div *ngIf="submitted && f.address.errors" class="invalid-feedback">
+                <div *ngIf="f.address.errors.required">Address is required</div>
+            </div>
+        </div>
+          <div class="form-group">
+          <label for="city">City</label>
+          <input type="text" formControlName="city" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.city.errors }" />
+              <div *ngIf="submitted && f.city.errors" class="invalid-feedback">
+                  <div *ngIf="f.city.errors.required">City is required</div>
+              </div>
+          </div>
+          <div class="form-group">
+            <label for="state">State</label>
+            <input type="text" formControlName="state" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.state.errors }" />
+            <div *ngIf="submitted && f.state.errors" class="invalid-feedback">
+                <div *ngIf="f.state.errors.required">state is required</div>
+            </div>
+          </div>
+          <!-- <div class="form-group">
+            <label for="state">State</label>
+            <select formControlName="states" class="form-control">
+              <option *ngFor="let state of states" [ngValue]="state">{{state}}</option>
+            </select>
+          </div> -->
+          <div class="form-group">
+            <label for="zip">Zip</label>
+            <input type="text" formControlName="zip" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.zip.errors }" />
+            <div *ngIf="submitted && f.zip.errors" class="invalid-feedback">
+                <div *ngIf="f.zip.errors.required">zip is required</div>
+            </div>
+          </div>
+          <label>
+            <input type="checkbox" checked="checked" name="sameadr"> Billing address same as Shipping
+          </label>
+          <div class="form-group">
+              <button  class="btn btn-primary">Checkout to payment</button>
+          </div>
+      </form>
+  </div>
+</div>
