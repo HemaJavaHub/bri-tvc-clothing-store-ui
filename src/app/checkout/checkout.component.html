@@ -151,7 +151,7 @@
   </thead>
   <tbody>
   <tr *ngFor="let el of cartItems">
-  <td><img src="https://dummyimage.com/50x50/55595c/fff" /> </td>
+  <td class ="thumbnail"><img src="{{el.product.image}}" class="portrait"/> </td>
   <td>{{el.name}}</td>
   <td>{{el.size}}</td>
   <td class="text-center">{{el.quantity}}</td>
