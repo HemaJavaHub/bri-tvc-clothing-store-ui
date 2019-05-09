@@ -51,7 +51,12 @@
 						<tr *ngFor="let el of cartItems">
 							<td data-th="Product">
 								<div class="row">
+<<<<<<< HEAD
 									<div class="col-sm-2 hidden-xs" class="thumbnail"><img src="{{el.product.image}}" alt="..." class="portrait"/></div>
+=======
+									<div class=" thumbnail">
+                    <img src="{{el.product.image}}" class="portrait" alt="image" /></div>
+>>>>>>> bf3f830e5c2dbd1f448b9ebbed796e4ace005867
 									<div class="col-sm-10">
                    <!-- <h4 class="nomargin">Product 1</h4>  -->
                    
@@ -64,7 +69,11 @@
 								<p class="text-center">{{el.quantity}}</p>
 							</td>
 							<td data-th="Subtotal" class="text-center">{{el.totalCost | currency:'$':true}}</td>
+<<<<<<< HEAD
 						
+=======
+					
+>>>>>>> bf3f830e5c2dbd1f448b9ebbed796e4ace005867
 						</tr>
 					</tbody>
 					<tfoot>
