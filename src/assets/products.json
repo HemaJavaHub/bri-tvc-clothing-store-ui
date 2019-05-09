@@ -216,7 +216,7 @@
     "name": "Teal Shirt",
     "category": "Men",
     "sub_category": "Shirts",
-    "price": 35.00,
+    "price": 30.00,
     "size": "M",
     "count": 10, 
     "image": "/assets/image/Men/SHIRTS/1.png"
@@ -226,7 +226,7 @@
     "name": "White Shirt",
     "category": "Men",
     "sub_category": "Shirts",
-    "price": 35.00,
+    "price": 30.00,
     "size": "M",
     "count": 10, 
     "image": "/assets/image/Men/SHIRTS/2.png"
@@ -236,7 +236,7 @@
     "name": "Floral Shirt",
     "category": "Men",
     "sub_category": "Shirts",
-    "price": 35.00,
+    "price": 25.00,
     "size": "M",
     "count": 10, 
     "image": "/assets/image/Men/SHIRTS/3.png"
@@ -246,7 +246,7 @@
     "name": "Peach Poplin Shirt",
     "category": "Men",
     "sub_category": "Shirts",
-    "price": 35.00,
+    "price": 25.00,
     "size": "M",
     "count": 10, 
     "image": "/assets/image/Men/SHIRTS/4.png"
@@ -256,7 +256,7 @@
     "name": "Striped Shirt",
     "category": "Men",
     "sub_category": "Shirts",
-    "price": 35.00,
+    "price": 30.00,
     "size": "M",
     "count": 10, 
     "image": "/assets/image/Men/SHIRTS/5.png"
@@ -266,49 +266,564 @@
     "name": "Peach Shirt",
     "category": "Men",
     "sub_category": "Shirts",
-    "price": 35.00,
+    "price": 30.00,
     "size": "M",
     "count": 10, 
     "image": "/assets/image/Men/SHIRTS/6.png"
     },
     {
     "id": 7,
-    "name": "White Sleeved Dress",
+    "name": "Light Blue Shirt",
     "category": "Men",
     "sub_category": "Shirts",
-    "price": 35.00,
+    "price": 30.00,
     "size": "M",
     "count": 10, 
     "image": "/assets/image/Men/SHIRTS/7.png"
     }, 
     {
     "id": 8,
-    "name": "White Sleeved Dress",
+    "name": "Yellow Shirt",
     "category": "Men",
     "sub_category": "Shirts",
-    "price": 35.00,
+    "price": 30.00,
     "size": "M",
     "count": 10, 
     "image": "/assets/image/Men/SHIRTS/8.png"
     },
     {
     "id": 9,
-    "name": "White Sleeved Dress",
+    "name": "Naby Blue Shirt",
     "category": "Men",
     "sub_category": "Shirts",
-    "price": 35.00,
+    "price": 25.00,
     "size": "M",
     "count": 10, 
     "image": "/assets/image/Men/SHIRTS/9.png"
     },
     {
     "id": 10,
-    "name": "White Sleeved Dress",
+    "name": "Multi-Colored Shirt",
     "category": "Men",
     "sub_category": "Shirts",
-    "price": 35.00,
+    "price": 20.00,
     "size": "M",
     "count": 10, 
     "image": "/assets/image/Men/SHIRTS/10.png"
+    },
+
+    {
+    "id": 1,
+    "name": "Gray Pants",
+    "category": "Men",
+    "sub_category": "Pants",
+    "price": 30.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Men/PANTS/1.png"
+    }, 
+    {
+    "id": 2,
+    "name": "Khaki Pants",
+    "category": "Men",
+    "sub_category": "Pants",
+    "price": 30.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Men/PANTS/2.png"
+    },
+    {
+    "id": 3,
+    "name": "Blue Pants ",
+    "category": "Men",
+    "sub_category": "Pants",
+    "price": 25.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Men/PANTS/3.png"
+    },
+    {
+    "id": 4,
+    "name": "Pink Pants  ",
+    "category": "Men",
+    "sub_category": "Pants",
+    "price": 25.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Men/PANTS/4.png"
+    }, 
+    {
+    "id": 5,
+    "name": "Green Pants",
+    "category": "Men",
+    "sub_category": "Pants",
+    "price": 30.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Men/PANTS/5.png"
+    },
+    {
+    "id": 6,
+    "name": "White Pants",
+    "category": "Men",
+    "sub_category": "Pants",
+    "price": 30.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Men/PANTS/6.png"
+    },
+    {
+    "id": 7,
+    "name": "Charcoal Grey Pants",
+    "category": "Men",
+    "sub_category": "Pants",
+    "price": 30.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Men/PANTS/7.png"
+    }, 
+    {
+    "id": 8,
+    "name": "Dark Grey Pants",
+    "category": "Men",
+    "sub_category": "Pants",
+    "price": 30.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Men/PANTS/8.png"
+    },
+    {
+    "id": 9,
+    "name": "Pearl white Pants",
+    "category": "Men",
+    "sub_category": "Pants",
+    "price": 25.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Men/PANTS/9.png"
+    },
+    {
+    "id": 10,
+    "name": "Black Pants",
+    "category": "Men",
+    "sub_category": "Pants",
+    "price": 20.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Men/PANTS/10.png"
+    }, 
+    {
+    "id": 10,
+    "name": "Black Pants",
+    "category": "Men",
+    "sub_category": "Pants",
+    "price": 20.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Men/PANTS/10.png"
+    },
+
+    {
+    "id": 1,
+    "name": "Jean Joggers",
+    "category": "Boys",
+    "sub_category": "Pants",
+    "price": 30.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Boys/PANTS/1.png"
+    }, 
+    {
+    "id": 2,
+    "name": "Dark Blue Joggers",
+    "category": "Boys",
+    "sub_category": "Pants",
+    "price": 30.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Boys/PANTS/2.png"
+    },
+    {
+    "id": 3,
+    "name": "Light Blue Joggers",
+    "category": "Boys",
+    "sub_category": "Pants",
+    "price": 25.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Boys/PANTS/3.png"
+    },
+    {
+    "id": 4,
+    "name": "Kakhi Joggers",
+    "category": "Boys",
+    "sub_category": "Pants",
+    "price": 25.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Boys/PANTS/4.png"
+    }, 
+    {
+    "id": 5,
+    "name": "Blue Jeans",
+    "category": "Boys",
+    "sub_category": "Pants",
+    "price": 30.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Boys/PANTS/5.png"
+    },
+    {
+    "id": 6,
+    "name": "Dark Wash Jeans",
+    "category": "Boys",
+    "sub_category": "Pants",
+    "price": 30.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Boys/PANTS/6.png"
+    },
+    {
+    "id": 7,
+    "name": "Blue Chinos",
+    "category": "Boys",
+    "sub_category": "Pants",
+    "price": 30.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Boys/PANTS/7.png"
+    }, 
+    {
+    "id": 8,
+    "name": "Gray Chinos",
+    "category": "Boys",
+    "sub_category": "Pants",
+    "price": 30.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Boys/PANTS/8.png"
+    },
+    {
+    "id": 9,
+    "name": "Kakhi Chinos",
+    "category": "Boys",
+    "sub_category": "Pants",
+    "price": 25.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Boys/PANTS/9.png"
+    },
+    {
+    "id": 10,
+    "name": "Teal Chinos",
+    "category": "Boys",
+    "sub_category": "Pants",
+    "price": 20.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Boys/PANTS/10.png"
+    }, 
+
+    {
+    "id": 1,
+    "name": "Blue T-Shirt",
+    "category": "Boys",
+    "sub_category": "Shirts", 
+    "price": 30.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Boys/SHIRTS/1.png"
+    }, 
+    {
+    "id": 2,
+    "name": "Teal Button-down",
+    "category": "Boys",
+    "sub_category": "Shirts",
+    "price": 30.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Boys/SHIRTS/2.png"
+    },
+    {
+    "id": 3,
+    "name": "White Button-down",
+    "category": "Boys",
+    "sub_category": "Shirts",
+    "price": 25.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Boys/SHIRTS/3.png"
+    },
+    {
+    "id": 4,
+    "name": "Blue Button-down",
+    "category": "Boys",
+    "sub_category": "Shirts",
+    "price": 25.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Boys/SHIRTS/4.png"
+    }, 
+    {
+    "id": 5,
+    "name": "White T-shirt",
+    "category": "Boys",
+    "sub_category": "Shirts",
+    "price": 30.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Boys/SHIRTS/5.png"
+    },
+    {
+    "id": 6,
+    "name": "Green T-shirt",
+    "category": "Boys",
+    "sub_category": "Shirts",
+    "price": 30.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Boys/SHIRTS/6.png"
+    },
+    {
+    "id": 7,
+    "name": "Striped Shirt",
+    "category": "Boys",
+    "sub_category": "Shirts",
+    "price": 30.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Boys/SHIRTS/7.png"
+    }, 
+    {
+    "id": 8,
+    "name": "Green Polo",
+    "category": "Boys",
+    "sub_category": "Shirts",
+    "price": 30.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Boys/SHIRTS/8.png"
+    },
+    {
+    "id": 9,
+    "name": "Navy Polo",
+    "category": "Boys",
+    "sub_category": "Shirts",
+    "price": 25.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Boys/SHIRTS/9.png"
+    },
+    {
+    "id": 10,
+    "name": "Striped Polo",
+    "category": "Boys",
+    "sub_category": "Shirts",
+    "price": 20.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Boys/SHIRTS/10.png"
+    }, 
+
+    {
+    "id": 1,
+    "name": "Pink Dress",
+    "category": "Girls",
+    "sub_category": "Dress", 
+    "price": 30.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Girls/DRESS/1.png"
+    }, 
+    {
+    "id": 2,
+    "name": "Rainbow Dress",
+    "category": "Girls",
+    "sub_category": "Dress",
+    "price": 30.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Girls/DRESS/2.png"
+    },
+    {
+    "id": 3,
+    "name": "Peach Dress",
+    "category": "Girls",
+    "sub_category": "Dress",
+    "price": 25.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Girls/DRESS/3.png"
+    },
+    {
+    "id": 4,
+    "name": "Blue Dress",
+    "category": "Girls",
+    "sub_category": "Dress",
+    "price": 25.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Girls/DRESS/4.png"
+    }, 
+    {
+    "id": 5,
+    "name": "Black and White Dress",
+    "category": "Girls",
+    "sub_category": "Dress",
+    "price": 30.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Girls/DRESS/5.png"
+    },
+    {
+    "id": 6,
+    "name": "Striped Dress",
+    "category": "Girls",
+    "sub_category": "Dress",
+    "price": 30.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Girls/DRESS/6.png"
+    },
+    {
+    "id": 7,
+    "name": "Rainbow Dress",
+    "category": "Girls",
+    "sub_category": "Dress",
+    "price": 30.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Girls/DRESS/7.png"
+    }, 
+    {
+    "id": 8,
+    "name": "Gray Dress",
+    "category": "Girls",
+    "sub_category": "Dress",
+    "price": 30.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Girls/DRESS/8.png"
+    },
+    {
+    "id": 9,
+    "name": "Light Blue Dress",
+    "category": "Girls",
+    "sub_category": "Dress",
+    "price": 25.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Girls/DRESS/9.png"
+    },
+    {
+    "id": 10,
+    "name": "White Dress",
+    "category": "Girls",
+    "sub_category": "Dress",
+    "price": 20.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Girls/DRESS/10.png"
+    }, 
+
+    {
+    "id": 1,
+    "name": "Rainbow Top",
+    "category": "Girls",
+    "sub_category": "Tops", 
+    "price": 30.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Girls/TOPS/1.png"
+    }, 
+    {
+    "id": 2,
+    "name": "Pink Top",
+    "category": "Girls",
+    "sub_category": "Tops",
+    "price": 30.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Girls/TOPS/2.png"
+    },
+    {
+    "id": 3,
+    "name": "Gray Top",
+    "category": "Girls",
+    "sub_category": "Tops",
+    "price": 25.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Girls/TOPS/3.png"
+    },
+    {
+    "id": 4,
+    "name": "Blue Top",
+    "category": "Girls",
+    "sub_category": "Tops",
+    "price": 25.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Girls/TOPS/4.png"
+    }, 
+    {
+    "id": 5,
+    "name": "Fruit Top",
+    "category": "Girls",
+    "sub_category": "Tops",
+    "price": 30.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Girls/TOPS/5.png"
+    },
+    {
+    "id": 6,
+    "name": "Red Checkered Top",
+    "category": "Girls",
+    "sub_category": "Tops",
+    "price": 30.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Girls/TOPS/6.png"
+    },
+    {
+    "id": 7,
+    "name": "Blue Checkered Top",
+    "category": "Girls",
+    "sub_category": "Tops",
+    "price": 30.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Girls/TOPS/7.png"
+    }, 
+    {
+    "id": 8,
+    "name": "Dark Blue Top",
+    "category": "Girls",
+    "sub_category": "Tops",
+    "price": 30.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Girls/TOPS/8.png"
+    },
+    {
+    "id": 9,
+    "name": "White Top",
+    "category": "Girls",
+    "sub_category": "Tops",
+    "price": 25.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Girls/TOPS/9.png"
+    },
+    {
+    "id": 10,
+    "name": "Pink Top",
+    "category": "Girls",
+    "sub_category": "Tops",
+    "price": 20.00,
+    "size": "M",
+    "count": 10, 
+    "image": "/assets/image/Girls/TOPS/10.png"
     }
 ]
