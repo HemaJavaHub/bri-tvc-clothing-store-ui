@@ -83,15 +83,16 @@ export class CheckoutComponent implements OnInit, OnDestroy {
             })}
              
             let url='http://10.211.117.143:9999/order-service/order/processorder';
-            this.http.post<string>(url, this.orderDetails,{ responseType: 'text' as 'json'}).pipe(timeout(6000)).subscribe( 
+            this.http.post<string>(url, this.orderDetails,{ responseType: 'text' as 'json'}).pipe(timeout(10000)).subscribe( 
               (response)=>{
               this.orderNumber= response;
                console.log(response);
                localStorage.setItem('orderNumber',JSON.stringify(response));
-               this.email = localStorage.getItem('email');
+               this.email = localStorage.getItem("email");
                return response;
             });
-
+              this.orderNumber=localStorage.getItem("orderNumber");
+              this.email = localStorage.getItem("email");
       });
      
   });

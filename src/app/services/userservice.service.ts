@@ -11,7 +11,7 @@ export class UserserviceService {
 
   register(user: User) : any{
     let url='http://localhost:8091/users/registration';
-    return this.http.post(url, user).subscribe((response)=>{
+    return this.http.post(url, user,{responseType: 'text' as 'json'}).subscribe((response)=>{
       return response;
     });
   }
