@@ -40,7 +40,7 @@ const routes: Routes = [
     
     },
   {
-    path: 'checkout',
+    path: 'orderconfirmation',
        // path: 'productDescription',
   
       component: CheckoutComponent
