@@ -10,6 +10,7 @@ import { Observable } from "rxjs/Observable";
 import { Subscription } from "rxjs/Subscription";
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Orderdetails, OrderItems } from '../models/orderdetails';
+import { timeout } from 'rxjs/operators';
 
 interface ICartItemWithProduct extends CartItem {
 product: Product;
@@ -58,37 +59,41 @@ export class CheckoutComponent implements OnInit, OnDestroy {
 
       this.cartItems = cart.items.map((item) => {
         const product = this.products.find((p) => p.id === item.productId);
-        this.orderItems.push({name:item.name,size:item.size,qty:item.quantity,price:product.price * item.quantity});
+        this.orderItems.push({name:item.name,size:item.size,qty:item.quantity,price:product.price * item.quantity})
         return {
         ...item,
         product,
         totalCost: product.price * item.quantity };
         });
-        
+        console.log(this.orderItems);
+
+        this.cart.subscribe((shoppingCart)=>{this.finalAmount = shoppingCart.grossTotal});
+        this.finalAmount= +(this.finalAmount.toFixed(2));
+  
+        //this.address=localStorage.getItem('address');
+        console.log(localStorage.getItem("username"));
+        this.orderDetails = new Orderdetails();
+            this.orderDetails.username=localStorage.getItem("username");
+            this.orderDetails.email=localStorage.getItem("email");
+            this.orderDetails.items=this.orderItems;
+            this.orderDetails.total=this.finalAmount;
+            this.orderDetails.address=localStorage.getItem("address");
+            let header = {headers:new HttpHeaders({
+              'Content':'application/json'
+            })}
+             
+            let url='http://10.211.117.143:9999/order-service/order/processorder';
+            this.http.post<string>(url, this.orderDetails,{ responseType: 'text' as 'json'}).pipe(timeout(6000)).subscribe( 
+              (response)=>{
+              this.orderNumber= response;
+               console.log(response);
+               localStorage.setItem('orderNumber',JSON.stringify(response));
+               this.email = localStorage.getItem('email');
+               return response;
+            });
+
       });
-      this.cart.subscribe((shoppingCart)=>{this.finalAmount = shoppingCart.grossTotal});
-      console.log(this.orderItems)
-      //this.address=localStorage.getItem('address');
-      console.log(localStorage.getItem("username"));
-      this.orderDetails = new Orderdetails();
-          this.orderDetails.username=localStorage.getItem("username");
-          this.orderDetails.email=localStorage.getItem("email");
-          this.orderDetails.items=this.orderItems;
-          this.orderDetails.total=this.finalAmount;
-          this.orderDetails.address=localStorage.getItem("address");
-          let header = {headers:new HttpHeaders({
-            'Content':'application/json',
-            'ResponseType':'application/json'
-          })}
-           
-          let url='http://10.211.117.143:9999/order-service/order/processorder';
-          this.http.post<Orderdetails>(url, this.orderDetails,header).subscribe(
-            (response)=>{
-            this.orderDetails = response;
-             console.log(response);
-             localStorage.setItem('orderNumber',JSON.stringify(response));
-             return response;
-          });
+     
   });
 
 }

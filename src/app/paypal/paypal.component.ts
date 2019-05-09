@@ -71,7 +71,7 @@ export class PaypalComponent implements OnInit, AfterViewChecked {
           //      );
               
       
-          this.router.navigate(['/checkout']);
+          this.router.navigate(['/orderconfirmation']);
           //Do something when payment is successful.
 
         
@@ -135,6 +135,7 @@ export class PaypalComponent implements OnInit, AfterViewChecked {
     });
 
     this.cart.subscribe((shoppingCart)=>{this.finalAmount = shoppingCart.grossTotal});
+    this.finalAmount= +(this.finalAmount.toFixed(2));
     this.address=localStorage.getItem('address');
     console.log(localStorage.getItem("username"));
     this.orderdetails = new Orderdetails();
